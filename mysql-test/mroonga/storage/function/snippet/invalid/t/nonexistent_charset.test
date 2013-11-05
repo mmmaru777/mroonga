@@ -17,11 +17,11 @@
 --source ../../../../../include/mroonga/have_mroonga.inc
 --source ../../../../../include/mroonga/load_mroonga_functions.inc
 
-# SET NAMES UTF8;
+SET NAMES UTF8;
 
 --error ER_UNKNOWN_COLLATION
 SELECT mroonga_snippet("Invalid charset test", 10, 2, "nonexistent_charset",
-                       1, 0, "...", "...", "charset", "<", ">");
+                       1, 0, "...", "...", "charset", "\<", "\>");
 
 --source ../../../../../include/mroonga/unload_mroonga_functions.inc
 --source ../../../../../include/mroonga/have_mroonga_deinit.inc
