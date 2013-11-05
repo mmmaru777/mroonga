@@ -1,6 +1,6 @@
 notifications:
   recipients:
-    - groonga-mysql-commit@lists.sourceforge.jp
+    - mmmaru777@gmail.com
 language: cpp
 env:
   - MYSQL_VERSION=mysql-system
